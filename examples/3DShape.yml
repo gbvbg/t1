@@ -1,0 +1,20 @@
+- name: Basic wireframe
+  geometry:
+  - name: Point.1
+    PointXYZ:
+      x: 10
+      y: 20
+      z: 30
+  - name: Point.2
+    PointXYZ:
+      proto: Point.1
+      z: 50
+  - name: Line.1
+    LinePtPt:
+      from: Point.1
+      to: Point.2
+      start: 10
+      end: 30
+  checks:
+    - name: test length of Line.1
+      failed_when: Line.1.Length != 222
