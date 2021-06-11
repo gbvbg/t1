@@ -1,0 +1,13 @@
+---
+- PointXYZ: &Point1
+      x: 10
+      y: 20
+      z: 30
+- PointXYZ: &Point2
+      <<: *Point1
+      z: 300.6
+- LinePtPt: &Line1
+      from: *Point1
+      to: *Point2
+      start: 10
+      end: 30

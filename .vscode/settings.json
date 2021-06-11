@@ -1,0 +1,8 @@
+{
+    // https://duncanleung.com/visual-studio-code-yml-custom-serverless-tag/
+    // https://github.com/redhat-developer/vscode-yaml
+    "yaml.customTags": [
+        "!Ref scalar",
+        "!GetAtt scalar"
+    ]
+}
